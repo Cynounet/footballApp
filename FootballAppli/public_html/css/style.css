@@ -1,24 +1,35 @@
 /* 
-    Created on : 21 févr. 2015, 18:27:32
+    Created on : 21 fÃƒÂ©vr. 2015, 18:27:32
     Author     : Rolland
 */
 
 /*------------------------------------------------*\
         $INTERFACE
 \*------------------------------------------------*/
-.header {
+#logo{
+    top: 0; left: 0;
     position: absolute;
-    top: 0; left: 0; right: 0;
-    height: 60px;
-    line-height: 60px;
-    color: #ffffff;
+}
+
+.menu{
+    margin-top: 150px;
+}
+
+.menu > li > a{
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
     text-transform: uppercase;
-    text-align: center;
-    background-color: #398439;
-    font-weight: bold;
+    letter-spacing: 0.12em;
+}
+
+.header {
+    height: 200px;
+    line-height: 200px;
+    background-image: radial-gradient(at center top , #1780bf 10%, #0b4788 70%);
 }
 
 .view{
     position: absolute;
-    top: 60px; left: 0; right: 0;
+    top: 250px; left: 0; right: 0;
 }

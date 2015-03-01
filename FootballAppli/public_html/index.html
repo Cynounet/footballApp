@@ -4,7 +4,7 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
-<html>
+<html ng-app="test">
     <head>
         <title>Accueil</title>
         <meta charset="UTF-8">
@@ -14,26 +14,36 @@ and open the template in the editor.
     </head>
     <body>
         <header class="navbar navbar-fixed-top navbar-default header">
-            <img src="img/logo_om.png" id="logo" alt="Allez l'OM" />
-            <div class="collapse navbar-collapse">
-                <div class="nav navbar-nav navbar-login navbar-right">
-                    <button class="btn-sm btn-menu btn-blue-menu menu">Login</button>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="img/logo_om.png" id="logo" alt="Allez l'OM" />
                 </div>
-                <ul class="nav navbar-nav navbar-right menu">
-                    <li class="dropdown">
-                        <a class="dropdown-toggle" href="#">Menu 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 3</a>
-                    </li>
-                    <li>
-                        <a href="#">Menu 4</a>
-                    </li>
-                </ul>
-                
+                <div class="navbar-collapse collapse in">
+                    <div class="nav navbar-nav nav-login navbar-right">
+                        <button class="btn-sm btn-login btn-login-white">Login</button>
+                    </div>
+                    <ul class="nav navbar-nav navbar-right nav-menu" ng-controller="DropdownCtrl">
+                        <li dropdown on-toggle="toggleDropdown">
+                            <a class="dropdown-toggle" dropdown-toggle href="#">
+                                Menu 1 <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Sous menu 1</a></li>
+                                <li><a href="#">Sous menu 2</a></li>
+                                <li><a href="#">Sous menu 3</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">Menu 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 3</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu 4</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </header>
         <section class="view">
@@ -92,5 +102,6 @@ and open the template in the editor.
         
         <script type="text/javascript" src="js/angular.min.js"></script>
         <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
     </body>
 </html>

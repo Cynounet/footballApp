@@ -6,17 +6,18 @@
 /*------------------------------------------------*\
         $INTERFACE
 \*------------------------------------------------*/
+.header {
+    background-image: radial-gradient(at center top , #1780bf 10%, #0b4788 70%);
+}
+
 #logo{
     top: 0; left: 0;
     position: absolute;
+    height: auto;
+    width: 90px;
 }
 
-.menu{
-    margin-top: 130px;
-    margin-right: 150px;
-}
-
-.menu > li > a{
+.nav-menu a{
     font-size: 14px;
     font-weight: 600;
     color: #fff;
@@ -24,10 +25,8 @@
     letter-spacing: 0.12em;
 }
 
-.header {
-    height: 200px;
-    line-height: 200px;
-    background-image: radial-gradient(at center top , #1780bf 10%, #0b4788 70%);
+.nav-login{
+    margin: 8px 0 auto 100px;
 }
 
 .view{
@@ -35,26 +34,24 @@
     top: 250px; left: 0; right: 0;
 }
 
-.navbar-login{
-    margin-left: 36px;
-}
 
-.btn-menu {
+
+.btn-login {
     border-radius: 99px;
-    padding: 10px 30px;
+    padding: 5px 30px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 600;
     transition: all 0.2s ease-in 0s;
 }
 
-.btn-blue-menu{
+.btn-login-white{
     background: none repeat scroll 0 0 transparent;
     border: 2px solid #fff;
     color: #fff;
 }
 
-.btn-menu:hover{
-    color: #0b4788;
+.btn-login:hover{
+    color: #bea064;
     background: none repeat scroll 0 0 #fff;
 }

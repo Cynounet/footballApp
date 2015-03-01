@@ -34,8 +34,6 @@
     top: 250px; left: 0; right: 0;
 }
 
-
-
 .btn-login {
     border-radius: 99px;
     padding: 5px 30px;
@@ -54,4 +52,16 @@
 .btn-login:hover{
     color: #bea064;
     background: none repeat scroll 0 0 #fff;
+}
+
+/*------------------------------------------------*\
+        $BOOTSTRAP
+\*------------------------------------------------*/
+
+.drop-menu-blue{
+    left: 0;
+}
+
+.nav-menu-dropdown li{
+    position: static;
 }
